@@ -19,7 +19,7 @@ public class InventoryStateManager {
 
 	public Memento get(int index) {
 		if(index >= mementos.size()) {
-			// throw an invalid index
+			return null;
 		}
 		return mementos.get(index);
 	}
